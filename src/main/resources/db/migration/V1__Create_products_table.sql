@@ -5,5 +5,6 @@ CREATE TABLE car_service_table (
                                    graduation_year INT,
                                    price INT,
                                    color VARCHAR(255),
-                                   type_engine VARCHAR(255)
+                                   type_engine VARCHAR(255),
+                                   VIN_code VARCHAR(255)
 );
