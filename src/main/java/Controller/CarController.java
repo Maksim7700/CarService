@@ -13,8 +13,8 @@ public class CarController {
     @Autowired
     private CarService carService;
 
-    @GetMapping(value = "/cars/{id}")
-    public CarServiceTable getCar(@PathVariable String VIN_code) {
+    @GetMapping(value = "/cars/{vin_code}")
+    public CarServiceTable getCar(@PathVariable("vin_code") String VIN_code) {
         return carService.getCarsByVIN(VIN_code);
     }
 

@@ -28,8 +28,10 @@ public class CarService {
 
     public CarServiceTable updateCar(CarServiceTable newCar){
         CarServiceTable car = getCarById(newCar.getId());
-        updateCar(newCar, car);
-        carRepository.save(car);
+        if (car != null) {
+            updateCar(newCar, car);
+            carRepository.save(car);
+        }
         return newCar;
     }
 
