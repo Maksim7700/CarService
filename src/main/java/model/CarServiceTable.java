@@ -29,6 +29,8 @@ public class CarServiceTable {
     private String color;
     @Column(name = "type_engine")
     private TypeEngine type_engine;
+    @Column(name = "VIN_code")
+    private String VIN_code;
 
 
 }
